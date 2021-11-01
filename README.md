@@ -11,3 +11,7 @@ Style Guide (Word Documents):
 Cover Pages: ION Dark
 Design: Basic (Elegant)
 Colours: office standard
+
+Current Version: 0.1
+Changelog: 
+0.1 - Initial Prototype Upload
