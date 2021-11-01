@@ -2,18 +2,22 @@
 Team Oranges' Group RAD Assignment - Movie Database - 3 Sprints
 
 
-Team Name: Team Orange
-Members: Jaron Rose, Chris Chi, Benjamin Wearn
-Scrum Master: Benjamin
-Team member #1: Chris
-Team Member #2: Jaron
-Team Location: 192.168.56.104
+## Team Name: 
+Team Orange
 
-Style Guide (Word Documents):
+## Members: 
+Jaron Rose, Chris Chi, Benjamin Wearn
+## Scrum Master: 
+Benjamin - Week 1; Chris - Week 2; Jaron - Week 3
+## Team Location: 
+192.168.56.104
+
+## Style Guide (Word Documents):
 Cover Pages: ION Dark
 Design: Basic (Elegant)
 Colours: office standard
 
-Current Version: 0.1
-Changelog: 
+## Current Version: 
+0.1
+## Changelog: 
 0.1 - Initial Prototype Upload
