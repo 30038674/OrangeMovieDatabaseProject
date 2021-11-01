@@ -1,11 +1,13 @@
 # OrangeMovieDatabaseProject
 Team Oranges' Group RAD Assignment - Movie Database - 3 Sprints
 
+
 Team Name: Team Orange
 Members: Jaron Rose, Chris Chi, Benjamin Wearn
 Scrum Master: Benjamin
 Team member #1: Chris
 Team Member #2: Jaron
+Team Location: 192.168.56.104
 
 Style Guide (Word Documents):
 Cover Pages: ION Dark
