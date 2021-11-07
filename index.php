@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-	<!-- Benjamin Wearn - P467480 -->
-	<!-- Template -->
+	<!-- Team Orange: Web Movie Database -->
+	<!-- Team: Ben, Jaron, Chris-->
+	<!-- original project base: Ben -->
 	<!--  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	
 	
 	<head>
 		<!-- Code Comment -->
