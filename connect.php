@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "usbw";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=smt_movie_db", $username, $password);
