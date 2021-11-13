@@ -90,9 +90,6 @@
                         
                         <center><button type="submit" formaction="searchscr.php" class="btn btn-default">Search Database</button></center>
                         </div>
-                        <article class="col-lg-12">
-                            <?php include 'searchscr.php'; ?>
-                        </article>
 						
                     </form>
 				
