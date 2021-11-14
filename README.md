@@ -18,6 +18,6 @@ Design: Basic (Elegant)
 Colours: office standard
 
 ## Current Version: 
-0.1
+0.2
 ## Changelog: 
-0.1 - Initial Prototype Upload
+0.2 - Changes and updates performed on initial prototype
