@@ -25,7 +25,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 try {
-	$query = "SELECT * FROM movies";
+	$query = "SELECT ID, Title, Rating, Year, Genre, TotalStars / NumberOfRatings AS 'Stars' FROM movies";
 	$andParts = array();
 
 	if(!empty($title))
@@ -49,7 +49,7 @@ try {
 		echo 'empty';
 	
 	echo "<table style='border: solid 1px black;'>";
-	echo "<tr><th>ID</th><th>Title</th><th>Studio</th><th>Status</th><th>Sound</th><th>Versions</th><th>RRP</th><th>Rating</th><th>Year</th><th>Genre</th><th>Aspect</th><th>Rank</th></tr>";
+	echo "<tr><th>ID</th><th>Title</th><th>Rating</th><th>Year</th><th>Genre</th><th>Stars</th></tr>";
 
 	foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
 		echo $v;
