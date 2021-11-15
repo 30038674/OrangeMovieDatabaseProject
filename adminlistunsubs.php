@@ -18,7 +18,7 @@
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="search.php">Search</a></li>
-			<li><a href="bargraph.php">Top10</a></li>
+			<li><a href="topten.php">Top10</a></li>
 			<li><a href="subscribe.php">Subscribe</a></li>
 			<li><a href="unsubscribe.php">Unsubscribe</a></li>
 			<li><a href="admin.php">Admin</a></li>
@@ -28,10 +28,8 @@
 			<article class="col-lg-12">
             	<h1>Admin Page</h1>
                 <h1>Unsubscribe Requests</h1>
-				<article class="col-lg-12">
                     <center><?php include 'listunsubmembers_scr.php'; ?></center>
-                </article>
-				<form action="removesubscr.php" method="post">
+                <form action="removesubscr.php" method="post">
                     <div class="form-group col-lg-3">
                         <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
 						<center><button type="submit" formaction="removesubscr.php" class="btn btn-default">Delete Member</button></center>
@@ -39,7 +37,5 @@
                 </form>
 			</article>
 		</main>
-    
 	</body>
-
 </html>

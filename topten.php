@@ -18,7 +18,7 @@
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="search.php">Search</a></li>
-			<li><a href="bargraph.php">Top10</a></li>
+			<li><a href="topten.php">Top10</a></li>
 			<li><a href="subscribe.php">Subscribe</a></li>
 			<li><a href="unsubscribe.php">Unsubscribe</a></li>
 			<li><a href="admin.php">Admin</a></li>
@@ -26,9 +26,8 @@
 		
 		<main>
 			<article class="col-lg-12">
-            	<h1>Welcome, to the SMT Movie Database!</h1>
-
-				<?php include 'bargraph.php'; ?>
+            	<h1>The top 10 Movies!</h1>
+            	<center><?php include "toptenscr.php"; ?></center>
 			</article>
 		</main>
     

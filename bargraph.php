@@ -2,13 +2,13 @@
 require("connect.php");
 
 try {
-	$query = "SELECT title FROM `movies` ORDER BY `Rank` DESC LIMIT 10;";
+	$query = "SELECT Title FROM 'movies' ORDER BY 'Stars' DESC LIMIT 10;";
 	$stmt = $conn->prepare($query);
 	$stmt->execute();
 	$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$r = $stmt->fetchAll();
 	
-	$query2 = "SELECT Rank FROM `movies` ORDER BY `Rank` DESC LIMIT 10;";
+	$query2 = "SELECT Stars FROM 'movies' ORDER BY 'Stars' DESC LIMIT 10;";
 	$stmt2 = $conn->prepare($query2);
 	$stmt2->execute();
 	$result2 = $stmt2->setFetchMode(PDO::FETCH_ASSOC);
@@ -19,27 +19,12 @@ try {
 $data_array = Array();
 
 for ($i = 0; $i < 10; $i++){
-	$data_array += array($r[$i]['title'] => $r2[$i]['Rank']);
-	// array_push($data_array, $r[$i]['title'] => $r2[$i]['Ranking']);
+	$data_array += array($r[$i]['Title'] => $r2[$i]['Stars']);
 }
 /////////////////////////////////////////////////////////////////
 //////////////////////////Testing Area///////////////////////////
 /////////////////////////////////////////////////////////////////
-//echo '<br><br>';
-//print_r($data_array);
-//echo '<br><br>';
 
-// echo $r[0]['title'];
-// echo $r2[0]['Ranking'];
-// print_r($r);
-// echo '<br><br>';
-// print_r($r2);
-
-
-//$data = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-//print_r($data);
-
-//$data = $r;
 /////////////////////////////////////////////////////////////////
 
 GetChart($data_array, "TopRanked", 900, 1900, "Top 10 Ranked Movies");
@@ -62,7 +47,7 @@ function GetChart($data, $name, $Height, $Width, $Title) {
   $barWidth = ($gridRight/count($data))*.75;
 
   // Font settings
-  $font = 'arial.ttf';
+  $font = '/var/www/arial.ttf';
   $fontSize = 8;
 
   // Margin between label and axis
