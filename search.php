@@ -30,7 +30,7 @@
 				<br>
 				<center><p>Use the fields below to search our database!</p></center>
 					<!-- Form for database searching -->
-					<form action="searchscr.php" method="post">
+					<form method="post">
                         <div class="form-group col-lg-3">
                         	<p style="text-align: center;">Title:&nbsp;&nbsp;<input type="text" class="form-control" id="title" name="title" /></p>
 							<p style="text-align: center;">Year:&nbsp;&nbsp;<input type="text" class="form-control" id="year" name="year" /></p>
@@ -88,10 +88,13 @@
                         <div class="col-lg-10">
 						<br>
                         
-                        <center><button type="submit" formaction="searchscr.php" class="btn btn-default">Search Database</button></center>
+                        <center><button type="submit" class="btn btn-default">Search Database</button></center>
                         </div>
 						
                     </form>
+            <br>
+            <br>
+            	<?php include "searchscr.php"; ?>
 				
 			</article>
 		</main>
