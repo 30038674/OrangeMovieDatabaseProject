@@ -31,7 +31,7 @@
                         <div class="form-group col-lg-3">
                         	<p style="text-align: center;">First Name:&nbsp;&nbsp;<input type="text" class="form-control" id="firstname" name="firstname" /></p>
 							<p style="text-align: center;">Last Name:&nbsp;&nbsp;<input type="text" class="form-control" id="lastname" name="lastname" /></p>
-                        	<p style="text-align: center;">Email:&nbsp;&nbsp;<input type="text" class="form-control" id="email" name="email" /></p>
+                        	<p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
                         	<p style="text-align: center;">Favourite Genre:&nbsp;&nbsp;<input type="text" class="form-control" list="genre_list" id="favgenre" name="favgenre" /></p>
                             <p style="text-align: center;">I also want breaking news! :&nbsp;&nbsp;<input type="checkbox" class="form-control" id="breaking" name="breaking" value="1" /></p>
                             <datalist id="genre_list">
