@@ -33,7 +33,7 @@
                 </article>
 				<form action="removesubscr.php" method="post">
                     <div class="form-group col-lg-3">
-                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="text" class="form-control" id="email" name="email" /></p>
+                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
 						<center><button type="submit" formaction="removesubscr.php" class="btn btn-default">Delete Member</button></center>
                     </div>
                 </form>
