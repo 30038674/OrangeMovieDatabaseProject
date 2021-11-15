@@ -18,6 +18,7 @@ Design: Basic (Elegant)
 Colours: office standard
 
 ## Current Version: 
-0.2
+0.3 - 15/11/2021 - Current Scrum Master - Jaron Rose
 ## Changelog: 
 0.2 - Changes and updates performed on initial prototype
+
