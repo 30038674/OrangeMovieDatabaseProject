@@ -25,7 +25,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 try {
-	$query = "SELECT ID, Title, Rating, Year, Genre, TotalStars / NumberOfRatings AS 'Stars' FROM movies";
+	$query = "SELECT ID, Title, Rating, Year, Genre, Stars FROM movies";
 	$andParts = array();
 
 	if(!empty($title))
