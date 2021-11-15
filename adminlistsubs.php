@@ -26,15 +26,10 @@
 
 		<main>
 			<article class="col-lg-12">
-            	<h1>Admin Page</h1>
-
-                <h1>Subscriber List</h1>
-                <article class="col-lg-12">
-                    <center><?php include 'listmembers_scr.php'; ?></center>
-                </article>
+				<h1>Admin Page</h1>
+				<h1>Subscriber List</h1>
+				<center><?php include 'listmembers_scr.php'; ?></center>
 			</article>
 		</main>
-    
 	</body>
-
 </html>
