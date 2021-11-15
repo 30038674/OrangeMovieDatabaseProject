@@ -29,7 +29,7 @@
             	<h1>Unsubscribe Form</h1>
                 <form action="unsubscribescr.php" method="post">
                     <div class="form-group col-lg-3">
-                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="text" class="form-control" id="email" name="email" /></p>
+                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
                     </div>
                     <div class="col-lg-10">
                         <br>
