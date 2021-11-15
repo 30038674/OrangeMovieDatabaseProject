@@ -5,7 +5,7 @@ $id = $_POST["id"];
 $stars = $_POST["stars"];
 
 try {
-    $sql = "UPDATE movies SET TotalStars = TotalStars + '" . $stars . "', NumberOfRatings = NumberOfRatings + 1 WHERE id='" . $id . "'";
+    $sql = "UPDATE movies SET TotalStars = TotalStars + '" . $stars . "', NumberOfRatings = NumberOfRatings + 1, Stars = TotalStars / NumberOfRatings WHERE id='" . $id . "'";
     // use exec() because no results are returned
     $conn->exec($sql);
 } catch(PDOException $e) {
