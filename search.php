@@ -92,9 +92,21 @@
                         </div>
 						
                     </form>
-            <br>
-            <br>
-            	<?php include "searchscr.php"; ?>
+            	<form method="post">
+                	<p style="text-align: center;">Film ID:&nbsp;&nbsp;<input type="number" min="1" max="2298" class="form-control" id="id" name="id" /></p>
+                	<p style="text-align: center;">Rating:&nbsp;&nbsp;<input type="number" min="0" max="5" class="form-control" list="stars_list" id="stars" name="stars" /></p>
+                		<datalist id="stars_list">
+							<option value="0"></option>
+							<option value="1"></option>
+							<option value="2"></option>
+							<option value="3"></option>
+							<option value="4"></option>
+							<option value="5"></option>
+						</datalist>
+                <center><button type="submit" formaction="addratingscr.php" class="btn btn-default">Add rating to film</button></center>
+            	</form>
+            	<br><br>
+            <center><?php include "searchscr.php"; ?></center>
 				
 			</article>
 		</main>
