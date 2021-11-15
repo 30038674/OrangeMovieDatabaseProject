@@ -26,9 +26,15 @@
 
 		<main>
 			<article class="col-lg-12">
-				<h1>Admin Page</h1>
-				<h1>Subscriber List</h1>
-				<center><?php include 'listmembers_scr.php'; ?></center>
+            	<h1>Admin Page</h1>
+                <h1>Unsubscribe Requests</h1>
+                    <center><?php include 'listunsubmembers_scr.php'; ?></center>
+                <form action="removesubscr.php" method="post">
+                    <div class="form-group col-lg-3">
+                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
+						<center><button type="submit" formaction="removesubscr.php" class="btn btn-default">Delete Member</button></center>
+                    </div>
+                </form>
 			</article>
 		</main>
 	</body>
