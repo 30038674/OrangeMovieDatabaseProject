@@ -23,7 +23,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 try {
-  $stmt = $conn->prepare("SELECT id, title, rating, year, genre, stars FROM movies ORDER BY 'Stars' DESC LIMIT 10");
+  $stmt = $conn->prepare("SELECT id, title, rating, year, genre, stars FROM movies ORDER BY Stars DESC LIMIT 10");
   $stmt->execute();
 
   // set the resulting array to associative
