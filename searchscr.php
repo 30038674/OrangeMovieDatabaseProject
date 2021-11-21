@@ -1,10 +1,26 @@
 <?php
 require("connect.php");
 
-$title= $_POST['title'];
-$year= $_POST['year'];
-$rating= $_POST['rating'];
-$genre= $_POST['genre'];
+if (isset($_POST['title'])){
+	$title= $_POST['title'];
+}else{
+	$title=null;
+}
+if (isset($_POST['year'])){
+	$year= $_POST['year'];
+}else{
+	$year=null;
+}
+if (isset($_POST['rating'])){
+	$rating= $_POST['rating'];
+}else{
+	$rating=null;
+}
+if (isset($_POST['genre'])){
+	$genre= $_POST['genre'];
+}else{
+	$genre=null;
+}
 
 class TableRows extends RecursiveIteratorIterator {
   function __construct($it) {

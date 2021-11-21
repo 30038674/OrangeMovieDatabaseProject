@@ -2,13 +2,13 @@
 require("connect.php");
 
 try {
-	$query = "SELECT Title FROM 'movies' ORDER BY 'Stars' DESC LIMIT 10;";
+	$query = "SELECT Title FROM movies ORDER BY Stars DESC LIMIT 10";
 	$stmt = $conn->prepare($query);
 	$stmt->execute();
 	$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$r = $stmt->fetchAll();
 	
-	$query2 = "SELECT Stars FROM 'movies' ORDER BY 'Stars' DESC LIMIT 10;";
+	$query2 = "SELECT Stars FROM movies ORDER BY Stars DESC LIMIT 10";
 	$stmt2 = $conn->prepare($query2);
 	$stmt2->execute();
 	$result2 = $stmt2->setFetchMode(PDO::FETCH_ASSOC);
@@ -27,7 +27,7 @@ for ($i = 0; $i < 10; $i++){
 
 /////////////////////////////////////////////////////////////////
 
-GetChart($data_array, "TopRanked", 900, 1900, "Top 10 Ranked Movies");
+GetChart($data_array, "TopRanked", 700, 1800, "Top 10 Ranked Movies");
 
 function GetChart($data, $name, $Height, $Width, $Title) {
   // Image dimensions
@@ -47,17 +47,18 @@ function GetChart($data, $name, $Height, $Width, $Title) {
   $barWidth = ($gridRight/count($data))*.75;
 
   // Font settings
-  $font = '/var/www/arial.ttf';
+  //$font = '/var/www/arial.ttf'; //Linux - TAFE Server
+  $font = 'C:/xampp/htdocs/arial.ttf'; //Windows - Xampp
   $fontSize = 8;
 
   // Margin between label and axis
   $labelMargin = 8;
 
   // Max value on y-axis
-  $yMaxValue = max($data)*1.05;
+  $yMaxValue = 5*1.05;
 
   // Distance between grid lines on y-axis
-  $yLabelSpan = round((max($data)-min($data))/11);
+  $yLabelSpan = 1;
 
   // Init image
   $chart = imagecreate($imageWidth, $imageHeight);
@@ -86,7 +87,7 @@ function GetChart($data, $name, $Height, $Width, $Title) {
       $labelWidth = $labelBox[4] - $labelBox[0];
 
       $labelX = $gridLeft - $labelWidth - $labelMargin;
-      $labelY = $y + $fontSize / 2;
+      $labelY = $y + $fontSize / 5;
 
       imagettftext($chart, $fontSize, 0, $labelX, $labelY, $labelColor, $font, strval($i));
   }
@@ -127,9 +128,9 @@ function GetChart($data, $name, $Height, $Width, $Title) {
   //Add Title to Top of Chart
   $titleX=$Width/2-strlen($Title)*4;
   $titleY=$Height*.05;
-  imagettftext($chart, $fontSize*1.5, 0, $titleX, $titleY, $labelColor, $font, $Title);
+  //imagettftext($chart, $fontSize*1.5, 0, $titleX, $titleY, $labelColor, $font, $Title);
 	
-	ob_clean();
+	//ob_clean();
   header('Content-Type: image/png');
   $chart1=imagepng($chart);                 //Replaces the img src in the Body
   imagepng($chart, "/tmp/$Title.png");       //Saves a PNG with the Title as the name

@@ -7,9 +7,12 @@
 	<!-- Version History: 
 	0.1 Added bargraph page to site -->
 	<!--  -->
-	
+	<?php
+		$url1=$_SERVER['REQUEST_URI'];
+		header("Refresh: 5; URL=$url1");
+	?>
 	<head>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="refresh" content="10">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<title>Home</title>
 	</head>
@@ -27,7 +30,9 @@
 		<main>
 			<article class="col-lg-12">
             	<h1>The top 10 Movies!</h1>
-            	<center><?php include "toptenscr.php"; ?></center>
+            	<center><?php //include "toptenscr.php"; ?></center>
+				<center><img src="bargraph.php" alt="generated image"/></center>
+				
 			</article>
 		</main>
     
