@@ -12,6 +12,7 @@ $stmt = $conn->prepare($query);
 
 if ($stmt->execute(array($username, $hashed_password))) {
     echo "<p align=center>Account is registered.</p>";
+    header("location:userLogin.php");
   } else{
     echo "Query error.";
   }

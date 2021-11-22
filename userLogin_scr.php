@@ -1,7 +1,6 @@
 <?php
-
 require("connect.php");
-
+session_start();
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -17,11 +16,17 @@ try {
     die();
 }
 
-echo $query;
 $user = $stmt->fetch();
 
 if (password_verify($password, $user['hashedPassword'])) {
-    echo "<p align=center>You have Logged-In!!!</p>";
-} else {
+    
+    echo " <form action='adminlistsubs.php'>
+    <center><input type='submit' value='View Members' /></center>
+    </form>
+    <form action='adminlistunsubs.php'>
+    <center><input type='submit' value='View Unsubscribe Requests' /></center>
+    </form>";
+
+} else if (isset($username) && isset($password)){
     echo "<p align=center>Incorrect Username / Password</p>";
 }
