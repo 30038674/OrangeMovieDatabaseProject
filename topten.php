@@ -32,7 +32,7 @@
 			<article class="col-lg-12">
             	<h1>The top 10 Movies!</h1>
             	<center><?php //include "toptenscr.php"; ?></center>
-				<center><img src="bargraph.php" alt="generated image"/></center>
+				<center><img src="bargraph.php" alt="This is a script generated image that shows the top ten movies of the database"/></center>
 				
 			</article>
 		</main>

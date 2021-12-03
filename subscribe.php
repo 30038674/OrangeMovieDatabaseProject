@@ -22,7 +22,7 @@
 			<li><a href="subscribe.php">Subscribe</a></li>
 			<li><a href="unsubscribe.php">Unsubscribe</a></li>
 			<li style="float:right"><a href="admin.php">Admin Login</a></li>
-           		<li style="float:right"><a href='createLogin.php'>Create Account</a></li>
+           	<li style="float:right"><a href='createLogin.php'>Create Account</a></li>
 		</ul>
 
 		<main>
@@ -30,11 +30,11 @@
             	<h1>Subscribe Form</h1>
                 <form action="subscribescr.php" method="post">
                         <div class="form-group col-lg-3">
-                        	<p style="text-align: center;">First Name:&nbsp;&nbsp;<input type="text" class="form-control" id="firstname" name="firstname" /></p>
-							<p style="text-align: center;">Last Name:&nbsp;&nbsp;<input type="text" class="form-control" id="lastname" name="lastname" /></p>
-                        	<p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" required/></p>
-                        	<p style="text-align: center;">Favourite Genre:&nbsp;&nbsp;<input type="text" class="form-control" list="genre_list" id="favgenre" name="favgenre" /></p>
-                            <p style="text-align: center;">I also want breaking news! :&nbsp;&nbsp;<input type="checkbox" class="form-control" id="breaking" name="breaking" value="1" /></p>
+                        <center><label for="firstname"> First Name: </label><input type="text" class="form-control" id="firstname" name="firstname" /></center></br>
+                        <center><label for="lastname"> Last Name: </label><input type="text" class="form-control" id="lastname" name="lastname" /></center></br>
+                        <center><label for="email"> Email: </label><input type="email" class="form-control" id="email" name="email" required/></center></br>
+                        <center><label for="favgenre"> Favourite Genre: </label><input type="text" class="form-control" list="genre_list" id="favgenre" name="favgenre" /></center></br>
+                        <center><label for="breaking"> I also want breaking news! </label><input type="checkbox" class="form-control" id="breaking" name="breaking" value="1" /></center></br>
                             <datalist id="genre_list">
                                 <option value="Action/Adventure"></option>
                                 <option value="Action/Comedy"></option>

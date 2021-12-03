@@ -37,6 +37,8 @@
             	<h1>Welcome, to the SMT Movie Database!</h1>
 				<center><p>Welcome, please naivgate to our search page above to browse the database. </p></center>
 				<center><p>Please consider subscribing to our monthly newsletter, for news, updates, competitions and to join our SMT community!</p></center>
+
+				<img src="movieslogo.png" alt="This is a movie logo showing cinema paraphenalia and the text, 'movie database, millions of movies, show's, cartoons'">
 			</article>
 		</main>
     

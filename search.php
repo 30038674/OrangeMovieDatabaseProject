@@ -26,17 +26,17 @@
 		</ul>
 
 		<main>
-			<article class="col-lg-12">
+			<article class="col-lg-12">	
             	<h1>SMT Movie Database</h1>
 				<br>
 				<center><p>Use the fields below to search our database!</p></center>
 					<!-- Form for database searching -->
 					<form method="post">
                         <div class="form-group col-lg-3">
-                        	<p style="text-align: center;">Title:&nbsp;&nbsp;<input type="text" class="form-control" id="title" name="title" /></p>
-							<p style="text-align: center;">Year:&nbsp;&nbsp;<input type="text" class="form-control" id="year" name="year" /></p>
-                        	<p style="text-align: center;">Rating:&nbsp;&nbsp;<input type="text" class="form-control" list="rating_list" id="rating" name="rating" /></p>
-                        	<p style="text-align: center;">Genre:&nbsp;&nbsp;<input type="text" class="form-control" list="genre_list" id="genre" name="genre" /></p>
+							<center><label for="title"> Title: </label><input type="text" class="form-control" id="title" name="title"></center></br>
+							<center><label for="year"> Year: </label><input type="text" class="form-control" id="year" name="year"></center></br>
+							<center><label for="rating"> Rating: </label><input type="text" class="form-control" list="rating_list" id="rating" name="rating"></center></br>
+							<center><label for="genre"> Genre: </label><input type="text" class="form-control" list="genre_list" id="genre" name="genre"></center></br>
 								<!-- Datalist, allows dropdown box for inputs where inputs may not be known (database construction) -->
                         		<datalist id="rating_list">
 									<option value="G"></option>
@@ -89,13 +89,13 @@
                         <div class="col-lg-10">
 						<br>
                         
-                        <center><button type="submit" class="btn btn-default">Search Database</button></center>
+                        <center><button type="submit" class="btn btn-default">Search Database</button></center></br></br>
                         </div>
 						
                     </form>
             	<form method="post">
-                	<p style="text-align: center;">Film ID:&nbsp;&nbsp;<input type="number" min="1" max="2298" class="form-control" id="id" name="id" /></p>
-                	<p style="text-align: center;">Rating:&nbsp;&nbsp;<input type="number" min="0" max="5" class="form-control" list="stars_list" id="stars" name="stars" /></p>
+				<center><label for="id"> Film ID: </label><input type="number" min="1" max="2298" class="form-control" id="id" name="id" /></center></br>
+				<center><label for="stars"> Rating: </label><input type="number" min="0" max="5" class="form-control" list="stars_list" id="stars" name="stars" /></center></br>
                 		<datalist id="stars_list">
 							<option value="0"></option>
 							<option value="1"></option>
