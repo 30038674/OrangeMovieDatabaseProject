@@ -47,8 +47,8 @@ function GetChart($data, $name, $Height, $Width, $Title) {
   $barWidth = ($gridRight/count($data))*.75;
 
   // Font settings
-  //$font = '/var/www/arial.ttf'; //Linux - TAFE Server
-  $font = 'C:/xampp/htdocs/arial.ttf'; //Windows - Xampp
+  $font = '/var/www/arial.ttf'; //Linux - TAFE Server
+  //$font = 'C:/xampp/htdocs/arial.ttf'; //Windows - Xampp
   $fontSize = 8;
 
   // Margin between label and axis
