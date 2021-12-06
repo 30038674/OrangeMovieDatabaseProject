@@ -21,9 +21,7 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="search.php">Search</a></li>
 			<li><a href="topten.php">Top10</a></li>
-			<li><a href="subscribe.php">Subscribe</a></li>
-			<li><a href="unsubscribe.php">Unsubscribe</a></li>
-			<li style="float:right"><a href="admin.php">Admin Login</a></li>
+			<li style="float:right"><a href="admin.php">Login</a></li>
            		<li style="float:right"><a href='createLogin.php'>Create Account</a></li>
 		</ul>
 		

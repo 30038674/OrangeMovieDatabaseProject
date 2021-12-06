@@ -19,8 +19,6 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="search.php">Search</a></li>
 			<li><a href="topten.php">Top10</a></li>
-			<li><a href="subscribe.php">Subscribe</a></li>
-			<li><a href="unsubscribe.php">Unsubscribe</a></li>
 			<li style="float:right"><a href="admin.php">Admin Login</a></li>
            		<li style="float:right"><a href='createLogin.php'>Create Account</a></li>
 		</ul>
@@ -30,7 +28,7 @@
             	<h1>Unsubscribe Form</h1>
                 <form action="unsubscribescr.php" method="post">
                     <div class="form-group col-lg-3">
-                        <p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p>
+					<label><p style="text-align: center;">Email:&nbsp;&nbsp;<input type="email" class="form-control" id="email" name="email" /></p></label>
                     </div>
                     <div class="col-lg-10">
                         <br>
